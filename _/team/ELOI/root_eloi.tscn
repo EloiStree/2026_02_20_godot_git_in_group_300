@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cnvwfk5mtsoxx"]
+
+[ext_resource type="PackedScene" uid="uid://dy6luyyq4ru58" path="res://_/team/ELOI/3D/Replicator/sg_replicator.tscn" id="1_d0dog"]
+[ext_resource type="PackedScene" uid="uid://dpt51vx2nfx3p" path="res://_/scene/light_delete_at_ready.tscn" id="2_rkpyo"]
+
+[node name="RootEloi" type="Node3D" unique_id=1992446679]
+
+[node name="CenterTableAsCubeForDebug" parent="." unique_id=1107119880 instance_placeholder="res://_/scene/center_table_as_cube_for_debug.tscn"]
+
+[node name="SG_Replicator" parent="." unique_id=1263765003 instance=ExtResource("1_d0dog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.46016964, 0)
+
+[node name="LightDeleteAtReady" parent="." unique_id=1334707916 instance=ExtResource("2_rkpyo")]

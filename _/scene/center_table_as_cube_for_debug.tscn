@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://d1wc21rka0iaw"]
+
+[ext_resource type="Script" uid="uid://bx8xjoaovs223" path="res://_/script/no_name/tool_free_at_ready.gd" id="1_psbkb"]
+[ext_resource type="PackedScene" uid="uid://drv7cd4n116ww" path="res://_/team/ELOI/scene/root_center_table.tscn" id="2_ntfr2"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2l7o3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2l7o3"]
+
+[node name="CenterTableAsCubeForDebug" type="Node3D" unique_id=1107119880 node_paths=PackedStringArray("parent_node_to_free")]
+script = ExtResource("1_psbkb")
+parent_node_to_free = NodePath(".")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1836857845]
+transform = Transform3D(1.794002, 0, 0, 0, 0.04736042, 0, 0, 0, 1.8032176, 0, 0.42956188, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D" unique_id=1537404066]
+mesh = SubResource("BoxMesh_2l7o3")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D" unique_id=1539705439]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/StaticBody3D" unique_id=1502842457]
+shape = SubResource("BoxShape3D_2l7o3")
+
+[node name="RootCenterTable" parent="." unique_id=1355414055 instance=ExtResource("2_ntfr2")]

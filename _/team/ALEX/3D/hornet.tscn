@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://da00qanmu8euv"]
+
+[ext_resource type="PackedScene" uid="uid://c2gtc8kxloiin" path="res://_/team/ALEX/3D/Hornet.glb" id="1_c1dyr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c1dyr"]
+cull_mode = 2
+albedo_color = Color(0.5294118, 0.5058824, 0.5137255, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ypfyd"]
+cull_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7n4kt"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t8i7r"]
+cull_mode = 2
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r5wdo"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rdokn"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fdutm"]
+cull_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iqjmo"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t62bi"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ttnmg"]
+albedo_color = Color(0.47657922, 0.4834036, 1, 1)
+
+[node name="Hornet" unique_id=390560526 instance=ExtResource("1_c1dyr")]
+
+[node name="Nail" parent="rig/Skeleton3D/DEF-hand_L/Empty_001" parent_id_path=PackedInt32Array(616620846) index="0" unique_id=1870404923]
+surface_material_override/0 = SubResource("StandardMaterial3D_c1dyr")
+surface_material_override/1 = SubResource("StandardMaterial3D_ypfyd")
+
+[node name="Body" parent="rig/Skeleton3D" parent_id_path=PackedInt32Array(1177348661) index="1" unique_id=1340155271]
+surface_material_override/0 = SubResource("StandardMaterial3D_7n4kt")
+
+[node name="Cloak" parent="rig/Skeleton3D" parent_id_path=PackedInt32Array(1177348661) index="2" unique_id=1658161126]
+transform = Transform3D(1, 0, 0, 0, 0.99048066, -0.137652, 0, 0.137652, 0.99048066, 0, -0.049865723, -0.21903956)
+surface_material_override/0 = SubResource("StandardMaterial3D_t8i7r")
+surface_material_override/1 = SubResource("StandardMaterial3D_r5wdo")
+surface_material_override/2 = SubResource("StandardMaterial3D_rdokn")
+
+[node name="Head" parent="rig/Skeleton3D" parent_id_path=PackedInt32Array(1177348661) index="3" unique_id=1965952580]
+surface_material_override/0 = SubResource("StandardMaterial3D_fdutm")
+surface_material_override/1 = SubResource("StandardMaterial3D_iqjmo")
+surface_material_override/2 = SubResource("StandardMaterial3D_t62bi")
+
+[node name="String" parent="." index="1" unique_id=58029660]
+surface_material_override/0 = SubResource("StandardMaterial3D_ttnmg")

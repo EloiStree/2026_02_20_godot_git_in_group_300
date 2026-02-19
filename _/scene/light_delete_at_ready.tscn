@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dpt51vx2nfx3p"]
+
+[ext_resource type="Script" uid="uid://bx8xjoaovs223" path="res://_/script/no_name/tool_free_at_ready.gd" id="1_qp02b"]
+
+[node name="LightDeleteAtReady" type="Node3D" unique_id=1334707916 node_paths=PackedStringArray("parent_node_to_free")]
+script = ExtResource("1_qp02b")
+parent_node_to_free = NodePath(".")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=186848191]
+transform = Transform3D(1, 0, 0, 0, 0.63464963, 0.7728, 0, -0.7728, 0.63464963, 0, 0, 0)

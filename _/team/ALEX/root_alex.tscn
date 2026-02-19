@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://biaxxgllt36wo"]
+
+[ext_resource type="PackedScene" path="res://_/scene/center_table_as_cube_for_debug.tscn" id="1_81f8l"]
+[ext_resource type="PackedScene" uid="uid://da00qanmu8euv" path="res://_/team/ALEX/3D/hornet.tscn" id="2_71mad"]
+
+[node name="RootAlex" type="Node3D" unique_id=1885667200]
+
+[node name="CenterTableAsCubeForDebug" parent="." unique_id=1107119880 instance=ExtResource("1_81f8l")]
+
+[node name="Hornet2" parent="." unique_id=390560526 instance=ExtResource("2_71mad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.007622719, -1.2348809)

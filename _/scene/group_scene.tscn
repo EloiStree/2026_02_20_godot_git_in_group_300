@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://bpsa21bygxfc4"]
+
+[ext_resource type="PackedScene" uid="uid://cnvwfk5mtsoxx" path="res://_/team/ELOI/root_eloi.tscn" id="1_2l7o3"]
+[ext_resource type="PackedScene" uid="uid://b8jfc477epton" path="res://_/team/CYRIL/root_cyril.tscn" id="1_83ip6"]
+[ext_resource type="PackedScene" uid="uid://biaxxgllt36wo" path="res://_/team/ALEX/root_alex.tscn" id="2_bol7g"]
+[ext_resource type="PackedScene" uid="uid://drx3cs1x3u4m8" path="res://_/team/EVY/root_evy.tscn" id="3_13ery"]
+[ext_resource type="PackedScene" uid="uid://bcv455uqr4qwp" path="res://_/team/LENNY/root_lenny.tscn" id="4_yq6t2"]
+[ext_resource type="PackedScene" uid="uid://buan7tdkfmnqy" path="res://_/team/LOELIA/root_loelia.tscn" id="5_035by"]
+[ext_resource type="PackedScene" uid="uid://73yba135n1n5" path="res://_/team/MARTIN/root_martin.tscn" id="6_2l7o3"]
+[ext_resource type="PackedScene" uid="uid://b5q2dwt1c8etu" path="res://_/team/NOLANN/root_nolann.tscn" id="7_ymono"]
+[ext_resource type="PackedScene" uid="uid://drv7cd4n116ww" path="res://_/team/ELOI/scene/root_center_table.tscn" id="9_13ery"]
+[ext_resource type="Script" uid="uid://chllmtsl8y2db" path="res://_/script/input_map_action_down_up.gd" id="9_yq6t2"]
+[ext_resource type="Script" uid="uid://32tjjofch138" path="res://_/script/no_name/tool_restart_level.gd" id="10_035by"]
+[ext_resource type="Script" uid="uid://crafxmmofetsk" path="res://_/script/no_name/tool_next_visible_node_3d.gd" id="11_2l7o3"]
+[ext_resource type="PackedScene" uid="uid://d1wc21rka0iaw" path="res://_/scene/center_table_as_cube_for_debug.tscn" id="13_bol7g"]
+[ext_resource type="PackedScene" uid="uid://bggdtykh4nrm1" path="res://addons/2025_04_15_gdp_kid_toy_ovni_code/scenes/elements/player_ovni_with_camera_in.tscn" id="13_ymono"]
+[ext_resource type="Script" uid="uid://dsd0mmfd4y1xp" path="res://_/script/xr_status.gd" id="15_16ni5"]
+
+[node name="GroupScene" type="Node3D" unique_id=1630157148]
+
+[node name="RootEloi" parent="." unique_id=1992446679 instance=ExtResource("1_2l7o3")]
+
+[node name="RootAlex" parent="." unique_id=1885667200 instance=ExtResource("2_bol7g")]
+
+[node name="RootCyril" parent="." unique_id=1165980230 instance=ExtResource("1_83ip6")]
+
+[node name="RootEvy" parent="." unique_id=2135369579 instance=ExtResource("3_13ery")]
+
+[node name="RootLenny" parent="." unique_id=2141219621 instance=ExtResource("4_yq6t2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.1920929e-07, 0)
+
+[node name="RootLoelia" parent="." unique_id=2128025930 instance=ExtResource("5_035by")]
+
+[node name="RootMartin" parent="." unique_id=700608425 instance=ExtResource("6_2l7o3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.1920929e-07, 0)
+
+[node name="RootNolann" parent="." unique_id=655081648 instance=ExtResource("7_ymono")]
+
+[node name="PlayerOvniWithCameraIn" parent="." unique_id=1522804880 instance=ExtResource("13_ymono")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5119401, 0)
+
+[node name="RootCenterTable" parent="." unique_id=1355414055 instance=ExtResource("9_13ery")]
+
+[node name="Input" type="Node" parent="." unique_id=531075338]
+
+[node name="RestartLevel" type="Node" parent="Input" unique_id=18463492]
+script = ExtResource("9_yq6t2")
+action_name = "restart"
+
+[node name="ToolRestart" type="Node" parent="Input/RestartLevel" unique_id=1000522616]
+script = ExtResource("10_035by")
+
+[node name="Next" type="Node" parent="Input" unique_id=1735054579]
+script = ExtResource("9_yq6t2")
+action_name = "next_in_game"
+
+[node name="ToolNextVisible" type="Node" parent="Input/Next" unique_id=426743500 node_paths=PackedStringArray("nodes_to_cycle")]
+script = ExtResource("11_2l7o3")
+nodes_to_cycle = [NodePath("../../../RootEloi"), NodePath("../../../RootAlex"), NodePath("../../../RootCyril"), NodePath("../../../RootEvy"), NodePath("../../../RootLenny"), NodePath("../../../RootLoelia"), NodePath("../../../RootMartin"), NodePath("../../../RootNolann")]
+
+[node name="CenterTableAsCubeForDebug" parent="." unique_id=1107119880 instance=ExtResource("13_bol7g")]
+
+[node name="XrStatus" type="Node" parent="." unique_id=1081426334]
+script = ExtResource("15_16ni5")
+
+[connection signal="on_down" from="Input/RestartLevel" to="Input/RestartLevel/ToolRestart" method="restart_level"]
+[connection signal="on_down" from="Input/Next" to="Input/Next/ToolNextVisible" method="next"]

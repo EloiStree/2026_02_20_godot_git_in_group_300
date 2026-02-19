@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://dy6luyyq4ru58"]
+
+[ext_resource type="PackedScene" uid="uid://bpijxo801e4ov" path="res://_/team/ELOI/3D/Replicator/SG_Replicator.fbx" id="1_qlnn5"]
+[ext_resource type="Material" uid="uid://v7gwhr6oaj2v" path="res://_/team/ELOI/3D/Replicator/replicator_material.tres" id="2_do2fw"]
+
+[node name="SG_Replicator" unique_id=1263765003 instance=ExtResource("1_qlnn5")]
+
+[node name="Rep_block_low_007" parent="." index="1" unique_id=1120646610]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_001" parent="Rep_block_low_007" index="0" unique_id=443444472]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_002" parent="Rep_block_low_007" index="1" unique_id=513862918]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_003" parent="Rep_block_low_007" index="2" unique_id=1504484468]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_004" parent="Rep_block_low_007" index="3" unique_id=2031625767]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_005" parent="Rep_block_low_007" index="4" unique_id=1704783122]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_006" parent="Rep_block_low_007" index="5" unique_id=1053498377]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_008" parent="Rep_block_low_007" index="6" unique_id=1466739754]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_009" parent="." index="2" unique_id=958191187]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_010" parent="." index="3" unique_id=34745749]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_011" parent="." index="4" unique_id=1109247997]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_018" parent="." index="5" unique_id=500870045]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_012" parent="Rep_block_low_018" index="0" unique_id=309912139]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_013" parent="Rep_block_low_018" index="1" unique_id=53673577]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_014" parent="Rep_block_low_018" index="2" unique_id=1739821277]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_015" parent="Rep_block_low_018" index="3" unique_id=1224689892]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_016" parent="Rep_block_low_018" index="4" unique_id=1182566850]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_017" parent="Rep_block_low_018" index="5" unique_id=1012239532]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_019" parent="Rep_block_low_018" index="6" unique_id=322046766]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_020" parent="." index="6" unique_id=1321117586]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_021" parent="." index="7" unique_id=1125529843]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_022" parent="." index="8" unique_id=1638661959]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_029" parent="." index="9" unique_id=765488475]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_023" parent="Rep_block_low_029" index="0" unique_id=821911798]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_024" parent="Rep_block_low_029" index="1" unique_id=1728597758]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_025" parent="Rep_block_low_029" index="2" unique_id=47512660]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_026" parent="Rep_block_low_029" index="3" unique_id=318554762]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_027" parent="Rep_block_low_029" index="4" unique_id=976509124]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_028" parent="Rep_block_low_029" index="5" unique_id=1773647570]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_030" parent="Rep_block_low_029" index="6" unique_id=603747523]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_037" parent="." index="10" unique_id=1431110176]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_031" parent="Rep_block_low_037" index="0" unique_id=1219469007]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_032" parent="Rep_block_low_037" index="1" unique_id=933909595]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_033" parent="Rep_block_low_037" index="2" unique_id=1144861581]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_034" parent="Rep_block_low_037" index="3" unique_id=1885163472]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_035" parent="Rep_block_low_037" index="4" unique_id=1467144302]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_036" parent="Rep_block_low_037" index="5" unique_id=1184554089]
+surface_material_override/0 = ExtResource("2_do2fw")
+
+[node name="Rep_block_low_038" parent="Rep_block_low_037" index="6" unique_id=969861566]
+surface_material_override/0 = ExtResource("2_do2fw")

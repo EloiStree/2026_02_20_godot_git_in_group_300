@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://v7gwhr6oaj2v"]
+
+[ext_resource type="Texture2D" uid="uid://dp2lxlbmbp5ol" path="res://_/team/ELOI/3D/Replicator/Textures/Rep_block_BaseColor.png" id="1_ulyjt"]
+[ext_resource type="Texture2D" uid="uid://da4k6cbtueg5y" path="res://_/team/ELOI/3D/Replicator/Textures/Rep_block_Metallic.png" id="2_0lsj1"]
+[ext_resource type="Texture2D" uid="uid://b3vikkrkihfwy" path="res://_/team/ELOI/3D/Replicator/Textures/Rep_block_Normal.png" id="3_oypqv"]
+
+[resource]
+albedo_texture = ExtResource("1_ulyjt")
+metallic = 1.0
+metallic_texture = ExtResource("2_0lsj1")
+normal_enabled = true
+normal_texture = ExtResource("3_oypqv")

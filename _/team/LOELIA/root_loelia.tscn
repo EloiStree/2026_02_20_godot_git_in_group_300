@@ -1,3 +1,27 @@
 [gd_scene format=3 uid="uid://buan7tdkfmnqy"]
 
+[ext_resource type="PackedScene" uid="uid://d1wc21rka0iaw" path="res://_/scene/center_table_as_cube_for_debug.tscn" id="1_wtx1s"]
+[ext_resource type="PackedScene" uid="uid://b1murnncg06t5" path="res://_/team/LOELIA/nox_s_sword_wakfu.glb" id="2_hhr33"]
+[ext_resource type="PackedScene" uid="uid://uimdgvq8b17y" path="res://_/team/LOELIA/3D/dofus_emeraude.glb" id="3_fs5t5"]
+[ext_resource type="PackedScene" uid="uid://c36g3hsvny06f" path="res://_/team/LOELIA/mosquito_in_amber.glb" id="4_fs5t5"]
+[ext_resource type="PackedScene" uid="uid://uu6131rwsu00" path="res://_/team/LOELIA/3D/jurassic_park_embryo_canister.glb" id="5_iflnl"]
+[ext_resource type="PackedScene" uid="uid://ctnuvqn2c52d6" path="res://_/team/LOELIA/fb_niffler.glb" id="6_iflnl"]
+
 [node name="RootLoelia" type="Node3D" unique_id=2128025930]
+
+[node name="CenterTableAsCubeForDebug" parent="." unique_id=1107119880 instance=ExtResource("1_wtx1s")]
+
+[node name="EpeeNox" parent="." unique_id=1372301594 instance=ExtResource("2_hhr33")]
+transform = Transform3D(-0.0015481312, 0, 0.003688264, 0, -0.004, 0, -0.003688264, 0, -0.0015481312, 0.31195915, 0.526715, 0)
+
+[node name="dofus emeraude" parent="." unique_id=1611073918 instance=ExtResource("3_fs5t5")]
+transform = Transform3D(0.17040388, 0, 0.10470203, 0, 0.2, 0, -0.10470203, 0, 0.17040388, -0.17185828, 0.4415611, -0.11030638)
+
+[node name="moustique dans l\'ambre" parent="." unique_id=169161785 instance=ExtResource("4_fs5t5")]
+transform = Transform3D(-0.00022869531, -0.0019868817, 0, 0.0019868817, -0.00022869531, 0, 0, 0, 0.002, 0.65673834, 0.52098507, 0)
+
+[node name="bombonne Nedri" parent="." unique_id=680221771 instance=ExtResource("5_iflnl")]
+transform = Transform3D(0.048351154, 0, 0.087533794, 0, 0.099999994, 0, -0.087533794, 0, 0.048351154, -0.35078868, 0.44691598, 0.51504886)
+
+[node name="nifleur" parent="." unique_id=962503670 instance=ExtResource("6_iflnl")]
+transform = Transform3D(0.808514, 0, 0.58847696, 0, 1, 0, -0.58847696, 0, 0.808514, 1.4321352, 0.45392245, 0)

@@ -1,3 +1,19 @@
 [gd_scene format=3 uid="uid://drx3cs1x3u4m8"]
 
+[ext_resource type="PackedScene" uid="uid://d1wc21rka0iaw" path="res://_/scene/center_table_as_cube_for_debug.tscn" id="1_e30x4"]
+[ext_resource type="PackedScene" uid="uid://dewpqn0qkl8h4" path="res://_/team/EVY/3D/candle_15.glb" id="3_vt7uo"]
+[ext_resource type="PackedScene" uid="uid://bdgbk1iqtml3a" path="res://_/team/EVY/3D/castle_byers (1).glb" id="4_55m0i"]
+[ext_resource type="PackedScene" uid="uid://beryt5dr2dj4x" path="res://_/team/EVY/3D/old_book.glb" id="4_vg24u"]
+
 [node name="RootEvy" type="Node3D" unique_id=2135369579]
+
+[node name="CenterTableAsCubeForDebug" parent="." unique_id=1107119880 instance=ExtResource("1_e30x4")]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1402638107 instance=ExtResource("3_vt7uo")]
+transform = Transform3D(0.885, 0, 0, 0, 0.885, 0, 0, 0, 0.885, 0.6940196, 0.46492398, -0.30319446)
+
+[node name="Sketchfab_Scene3" parent="." unique_id=1713493230 instance=ExtResource("4_vg24u")]
+transform = Transform3D(0.295, 0, 0, 0, 0.295, 0, 0, 0, 0.295, -1.0789332, -1.4408107, -0.6575664)
+
+[node name="Sketchfab_Scene4" parent="." unique_id=1511337391 instance=ExtResource("4_55m0i")]
+transform = Transform3D(0.125, 0, 0, 0, 0.125, 0, 0, 0, 0.125, 0, 0.005348146, -1.3409299)

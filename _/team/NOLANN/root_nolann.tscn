@@ -1,3 +1,15 @@
 [gd_scene format=3 uid="uid://b5q2dwt1c8etu"]
 
+[ext_resource type="PackedScene" uid="uid://d1wc21rka0iaw" path="res://_/scene/center_table_as_cube_for_debug.tscn" id="1_q338e"]
+[ext_resource type="PackedScene" uid="uid://ct0ebhbcikg36" path="res://_/team/NOLANN/3D/hollow pure.glb" id="2_mros4"]
+[ext_resource type="PackedScene" uid="uid://cdfcfjavifgyi" path="res://_/team/NOLANN/3D/gregorys_backpack.glb" id="3_k5nwg"]
+
 [node name="RootNolann" type="Node3D" unique_id=655081648]
+
+[node name="CenterTableAsCubeForDebug" parent="." unique_id=1107119880 instance=ExtResource("1_q338e")]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1089751898 instance=ExtResource("2_mros4")]
+transform = Transform3D(0.076040305, 0, 0.99710476, 0, 1, 0, -0.99710476, 0, 0.076040305, -0.27632177, 0.3500743, 1.5487312)
+
+[node name="Sketchfab_Scene2" parent="." unique_id=644614749 instance=ExtResource("3_k5nwg")]
+transform = Transform3D(-1.3799026, 0, 5.6138062, 0, 3.7032232, 0, -3.1889195, 0, -2.429195, -0.46609783, 0.45573255, -0.240942)

@@ -1,3 +1,15 @@
 [gd_scene format=3 uid="uid://b8jfc477epton"]
 
+[ext_resource type="PackedScene" uid="uid://d1wc21rka0iaw" path="res://_/scene/center_table_as_cube_for_debug.tscn" id="1_p1q1s"]
+[ext_resource type="PackedScene" uid="uid://du17jmlnb02in" path="res://_/team/CYRIL/3D/mn_courbet_1913.glb" id="2_ntp58"]
+[ext_resource type="PackedScene" uid="uid://bvu2bxg4ocll7" path="res://_/team/CYRIL/3D/howitzer_2a65_msta.glb" id="3_rvlqd"]
+
 [node name="RootCyril" type="Node3D" unique_id=1165980230]
+
+[node name="CenterTableAsCubeForDebug" parent="." unique_id=1107119880 instance=ExtResource("1_p1q1s")]
+
+[node name="Sketchfab_Scene" parent="." unique_id=626170651 instance=ExtResource("2_ntp58")]
+transform = Transform3D(0.025423056, 0, -0.14782986, 0, 0.15, 0, 0.14782986, 0, 0.025423056, -0.38213158, 0.20155692, -2.2199655)
+
+[node name="Sketchfab_Scene2" parent="." unique_id=573776724 instance=ExtResource("3_rvlqd")]
+transform = Transform3D(-0.019185785, 0, -0.0056485045, 0, 0.02, 0, 0.0056485045, 0, -0.019185785, -0.2988307, 0.48865378, -0.8362749)

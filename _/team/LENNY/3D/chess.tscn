@@ -1,7 +1,4 @@
-[gd_scene format=4 uid="uid://bcv455uqr4qwp"]
-
-[ext_resource type="PackedScene" uid="uid://d1wc21rka0iaw" path="res://_/scene/center_table_as_cube_for_debug.tscn" id="1_yhixe"]
-[ext_resource type="PackedScene" uid="uid://cymlhl3xe5lw6" path="res://_/team/LENNY/3D/foxiny.glb" id="2_5nxjj"]
+[gd_scene format=4 uid="uid://bhr3tny7188qd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_en4mk"]
 resource_name = "White_Paint"
@@ -1127,249 +1124,241 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_f6umj")
 
-[node name="RootLenny" type="Node3D" unique_id=2141219621]
+[node name="Sketchfab_Scene" type="Node3D" unique_id=1020464964]
 
-[node name="CenterTableAsCubeForDebug" parent="." unique_id=1107119880 instance=ExtResource("1_yhixe")]
-
-[node name="Sketchfab_Scene2" type="Node3D" parent="." unique_id=1020464964]
-transform = Transform3D(0.068, 0, 0, 0, 0.068, 0, 0, 0, 0.068, 0, 0.45864844, 0)
-
-[node name="Sketchfab_model" type="Node3D" parent="Sketchfab_Scene2" unique_id=1087113692]
+[node name="Sketchfab_model" type="Node3D" parent="." unique_id=1087113692]
 transform = Transform3D(0.2, 0, 0, 0, 4.440892e-17, 0.2, 0, -0.2, 4.440892e-17, 0, 0, 0)
 
-[node name="Root" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model" unique_id=1225950290]
+[node name="Root" type="Node3D" parent="Sketchfab_model" unique_id=1225950290]
 
-[node name="Lamp" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root" unique_id=955678430]
+[node name="Lamp" type="Node3D" parent="Sketchfab_model/Root" unique_id=955678430]
 transform = Transform3D(-0.29086, -0.7711, 0.56639, 0.95517, -0.19988, 0.21839, -0.05519, 0.60452, 0.79467, 4.07625, 1.00545, 5.90386)
 
-[node name="Lamp2" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Lamp" unique_id=563875391]
+[node name="Lamp2" type="Node3D" parent="Sketchfab_model/Root/Lamp" unique_id=563875391]
 
-[node name="White_Pieces" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root" unique_id=1228478552]
+[node name="White_Pieces" type="Node3D" parent="Sketchfab_model/Root" unique_id=1228478552]
 
-[node name="White_Knights" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces" unique_id=2082666511]
+[node name="White_Knights" type="Node3D" parent="Sketchfab_model/Root/White_Pieces" unique_id=2082666511]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.2)
 
-[node name="White_Knight_001" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Knights" unique_id=1076713090]
+[node name="White_Knight_001" type="Node3D" parent="Sketchfab_model/Root/White_Pieces/White_Knights" unique_id=1076713090]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -21, 3.72255)
 
-[node name="White_Knight_001_0" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Knights/White_Knight_001" unique_id=514964666]
+[node name="White_Knight_001_0" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Knights/White_Knight_001" unique_id=514964666]
 mesh = SubResource("ArrayMesh_qaclk")
 
-[node name="White_Knight" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Knights" unique_id=375953650]
+[node name="White_Knight" type="Node3D" parent="Sketchfab_model/Root/White_Pieces/White_Knights" unique_id=375953650]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -21, 3.72255)
 
-[node name="White_Knight_001_02" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Knights/White_Knight" unique_id=1141117793]
+[node name="White_Knight_001_02" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Knights/White_Knight" unique_id=1141117793]
 mesh = SubResource("ArrayMesh_vjxlm")
 
-[node name="White_Rooks" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces" unique_id=647961642]
+[node name="White_Rooks" type="Node3D" parent="Sketchfab_model/Root/White_Pieces" unique_id=647961642]
 
-[node name="White_Rook_001" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Rooks" unique_id=349763783]
+[node name="White_Rook_001" type="Node3D" parent="Sketchfab_model/Root/White_Pieces/White_Rooks" unique_id=349763783]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, -21, 2.72545)
 
-[node name="White_Rook_001_0" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Rooks/White_Rook_001" unique_id=1153957082]
+[node name="White_Rook_001_0" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Rooks/White_Rook_001" unique_id=1153957082]
 mesh = SubResource("ArrayMesh_t1kpx")
 
-[node name="White_Rook" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Rooks" unique_id=1741851666]
+[node name="White_Rook" type="Node3D" parent="Sketchfab_model/Root/White_Pieces/White_Rooks" unique_id=1741851666]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, -21, 2.72545)
 
-[node name="White_Rook_001_02" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Rooks/White_Rook" unique_id=1852927239]
+[node name="White_Rook_001_02" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Rooks/White_Rook" unique_id=1852927239]
 mesh = SubResource("ArrayMesh_wnp3r")
 
-[node name="White_Pawns" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces" unique_id=1366190625]
+[node name="White_Pawns" type="Node3D" parent="Sketchfab_model/Root/White_Pieces" unique_id=1366190625]
 
-[node name="White_Pawn_007" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=129291084]
+[node name="White_Pawn_007" type="Node3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=129291084]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, -15, 1.77969)
 
-[node name="White_Pawn_007_0" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn_007" unique_id=1079667324]
+[node name="White_Pawn_007_0" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn_007" unique_id=1079667324]
 mesh = SubResource("ArrayMesh_ffdtu")
 
-[node name="White_Pawn_006" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=1695387801]
+[node name="White_Pawn_006" type="Node3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=1695387801]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -15, 1.77969)
 
-[node name="White_Pawn_007_02" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn_006" unique_id=1268601028]
+[node name="White_Pawn_007_02" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn_006" unique_id=1268601028]
 mesh = SubResource("ArrayMesh_bupla")
 
-[node name="White_Pawn_005" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=699046907]
+[node name="White_Pawn_005" type="Node3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=699046907]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -15, 1.77969)
 
-[node name="White_Pawn_007_03" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn_005" unique_id=828589940]
+[node name="White_Pawn_007_03" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn_005" unique_id=828589940]
 mesh = SubResource("ArrayMesh_4ers7")
 
-[node name="White_Pawn_004" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=1492002076]
+[node name="White_Pawn_004" type="Node3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=1492002076]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -15, 1.77969)
 
-[node name="White_Pawn_007_04" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn_004" unique_id=1920662422]
+[node name="White_Pawn_007_04" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn_004" unique_id=1920662422]
 mesh = SubResource("ArrayMesh_krfbn")
 
-[node name="White_Pawn_003" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=671885966]
+[node name="White_Pawn_003" type="Node3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=671885966]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -15, 1.77969)
 
-[node name="White_Pawn_007_05" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn_003" unique_id=612834416]
+[node name="White_Pawn_007_05" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn_003" unique_id=612834416]
 mesh = SubResource("ArrayMesh_t883d")
 
-[node name="White_Pawn_002" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=181980732]
+[node name="White_Pawn_002" type="Node3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=181980732]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -15, 1.77969)
 
-[node name="White_Pawn_007_06" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn_002" unique_id=548293370]
+[node name="White_Pawn_007_06" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn_002" unique_id=548293370]
 mesh = SubResource("ArrayMesh_yip8r")
 
-[node name="White_Pawn_001" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=1967736199]
+[node name="White_Pawn_001" type="Node3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=1967736199]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -15, 1.77969)
 
-[node name="White_Pawn_007_07" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn_001" unique_id=416960516]
+[node name="White_Pawn_007_07" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn_001" unique_id=416960516]
 mesh = SubResource("ArrayMesh_hcpgq")
 
-[node name="White_Pawn" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=417367791]
+[node name="White_Pawn" type="Node3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns" unique_id=417367791]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, -15, 1.77969)
 
-[node name="White_Pawn_007_08" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn" unique_id=490142440]
+[node name="White_Pawn_007_08" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Pawns/White_Pawn" unique_id=490142440]
 mesh = SubResource("ArrayMesh_6veeq")
 
-[node name="White_Bishops" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces" unique_id=1668477467]
+[node name="White_Bishops" type="Node3D" parent="Sketchfab_model/Root/White_Pieces" unique_id=1668477467]
 
-[node name="White_Bishop_001" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Bishops" unique_id=1424219387]
+[node name="White_Bishop_001" type="Node3D" parent="Sketchfab_model/Root/White_Pieces/White_Bishops" unique_id=1424219387]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -21, 2.83249)
 
-[node name="White_Bishop_001_0" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Bishops/White_Bishop_001" unique_id=1056745872]
+[node name="White_Bishop_001_0" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Bishops/White_Bishop_001" unique_id=1056745872]
 mesh = SubResource("ArrayMesh_jo7vh")
 
-[node name="White_Bishop" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Bishops" unique_id=1222588004]
+[node name="White_Bishop" type="Node3D" parent="Sketchfab_model/Root/White_Pieces/White_Bishops" unique_id=1222588004]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -21, 2.83249)
 
-[node name="White_Bishop_001_02" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Bishops/White_Bishop" unique_id=645495261]
+[node name="White_Bishop_001_02" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Bishops/White_Bishop" unique_id=645495261]
 mesh = SubResource("ArrayMesh_i6uel")
 
-[node name="White_Queen" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces" unique_id=2034552066]
+[node name="White_Queen" type="Node3D" parent="Sketchfab_model/Root/White_Pieces" unique_id=2034552066]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -21, 3.15258)
 
-[node name="White_Queen_0" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_Queen" unique_id=397108677]
+[node name="White_Queen_0" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_Queen" unique_id=397108677]
 mesh = SubResource("ArrayMesh_4lg2s")
 
-[node name="White_King" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces" unique_id=1088520455]
+[node name="White_King" type="Node3D" parent="Sketchfab_model/Root/White_Pieces" unique_id=1088520455]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -21, 3.4715)
 
-[node name="White_King_0" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/White_Pieces/White_King" unique_id=216302724]
+[node name="White_King_0" type="MeshInstance3D" parent="Sketchfab_model/Root/White_Pieces/White_King" unique_id=216302724]
 mesh = SubResource("ArrayMesh_pm2q2")
 
-[node name="Board_Frame" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root" unique_id=1522236238]
+[node name="Board_Frame" type="Node3D" parent="Sketchfab_model/Root" unique_id=1522236238]
 transform = Transform3D(24, 0, 0, 0, 24, 0, 0, 0, 24, 0, 0, 0)
 
-[node name="Board_Frame_0" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Board_Frame" unique_id=888576608]
+[node name="Board_Frame_0" type="MeshInstance3D" parent="Sketchfab_model/Root/Board_Frame" unique_id=888576608]
 mesh = SubResource("ArrayMesh_jmq0j")
 
-[node name="Board_Frame_1" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Board_Frame" unique_id=1627324469]
+[node name="Board_Frame_1" type="MeshInstance3D" parent="Sketchfab_model/Root/Board_Frame" unique_id=1627324469]
 mesh = SubResource("ArrayMesh_uhs18")
 
-[node name="Board_Frame_2" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Board_Frame" unique_id=1986730816]
+[node name="Board_Frame_2" type="MeshInstance3D" parent="Sketchfab_model/Root/Board_Frame" unique_id=1986730816]
 mesh = SubResource("ArrayMesh_e6pac")
 
-[node name="Black Pieces" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root" unique_id=546089457]
+[node name="Black Pieces" type="Node3D" parent="Sketchfab_model/Root" unique_id=546089457]
 transform = Transform3D(-1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="Black_King_001" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces" unique_id=995745143]
+[node name="Black_King_001" type="Node3D" parent="Sketchfab_model/Root/Black Pieces" unique_id=995745143]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -21, 3.4715)
 
-[node name="Black_King_001_0" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_King_001" unique_id=1446190256]
+[node name="Black_King_001_0" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_King_001" unique_id=1446190256]
 mesh = SubResource("ArrayMesh_77tnp")
 
-[node name="Black_Queen_001" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces" unique_id=1136892831]
+[node name="Black_Queen_001" type="Node3D" parent="Sketchfab_model/Root/Black Pieces" unique_id=1136892831]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -21, 3.15258)
 
-[node name="Black_Queen_001_0" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Queen_001" unique_id=1294942217]
+[node name="Black_Queen_001_0" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Queen_001" unique_id=1294942217]
 mesh = SubResource("ArrayMesh_t1l0b")
 
-[node name="Black_Bishops_001" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces" unique_id=948597007]
+[node name="Black_Bishops_001" type="Node3D" parent="Sketchfab_model/Root/Black Pieces" unique_id=948597007]
 
-[node name="Black_Bishop_003" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Bishops_001" unique_id=1497891535]
+[node name="Black_Bishop_003" type="Node3D" parent="Sketchfab_model/Root/Black Pieces/Black_Bishops_001" unique_id=1497891535]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -21, 2.83249)
 
-[node name="Black_Bishop_003_0" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Bishops_001/Black_Bishop_003" unique_id=1623663171]
+[node name="Black_Bishop_003_0" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Bishops_001/Black_Bishop_003" unique_id=1623663171]
 mesh = SubResource("ArrayMesh_fmhgs")
 
-[node name="Black_Bishop_002" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Bishops_001" unique_id=104094418]
+[node name="Black_Bishop_002" type="Node3D" parent="Sketchfab_model/Root/Black Pieces/Black_Bishops_001" unique_id=104094418]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -21, 2.83249)
 
-[node name="Black_Bishop_003_02" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Bishops_001/Black_Bishop_002" unique_id=311087393]
+[node name="Black_Bishop_003_02" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Bishops_001/Black_Bishop_002" unique_id=311087393]
 mesh = SubResource("ArrayMesh_v6ukp")
 
-[node name="Black_Pawns_001" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces" unique_id=1512388491]
+[node name="Black_Pawns_001" type="Node3D" parent="Sketchfab_model/Root/Black Pieces" unique_id=1512388491]
 
-[node name="Black_Pawn_015" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=493335883]
+[node name="Black_Pawn_015" type="Node3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=493335883]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, -15, 1.77969)
 
-[node name="Black_Pawn_015_0" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_015" unique_id=1821916146]
+[node name="Black_Pawn_015_0" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_015" unique_id=1821916146]
 mesh = SubResource("ArrayMesh_vas81")
 
-[node name="Black_Pawn_014" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=1509653371]
+[node name="Black_Pawn_014" type="Node3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=1509653371]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -15, 1.77969)
 
-[node name="Black_Pawn_015_02" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_014" unique_id=1383022567]
+[node name="Black_Pawn_015_02" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_014" unique_id=1383022567]
 mesh = SubResource("ArrayMesh_b0qgg")
 
-[node name="Black_Pawn_013" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=272191270]
+[node name="Black_Pawn_013" type="Node3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=272191270]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -15, 1.77969)
 
-[node name="Black_Pawn_015_03" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_013" unique_id=975514898]
+[node name="Black_Pawn_015_03" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_013" unique_id=975514898]
 mesh = SubResource("ArrayMesh_unu4h")
 
-[node name="Black_Pawn_012" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=502995658]
+[node name="Black_Pawn_012" type="Node3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=502995658]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -15, 1.77969)
 
-[node name="Black_Pawn_015_04" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_012" unique_id=692566271]
+[node name="Black_Pawn_015_04" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_012" unique_id=692566271]
 mesh = SubResource("ArrayMesh_nmou3")
 
-[node name="Black_Pawn_011" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=1552497423]
+[node name="Black_Pawn_011" type="Node3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=1552497423]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -15, 1.77969)
 
-[node name="Black_Pawn_015_05" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_011" unique_id=168137957]
+[node name="Black_Pawn_015_05" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_011" unique_id=168137957]
 mesh = SubResource("ArrayMesh_rardw")
 
-[node name="Black_Pawn_010" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=392011796]
+[node name="Black_Pawn_010" type="Node3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=392011796]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -15, 1.77969)
 
-[node name="Black_Pawn_015_06" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_010" unique_id=1831445223]
+[node name="Black_Pawn_015_06" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_010" unique_id=1831445223]
 mesh = SubResource("ArrayMesh_yyoey")
 
-[node name="Black_Pawn_009" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=1429301721]
+[node name="Black_Pawn_009" type="Node3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=1429301721]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -15, 1.77969)
 
-[node name="Black_Pawn_015_07" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_009" unique_id=1043239603]
+[node name="Black_Pawn_015_07" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_009" unique_id=1043239603]
 mesh = SubResource("ArrayMesh_flx2b")
 
-[node name="Black_Pawn_008" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=1740770650]
+[node name="Black_Pawn_008" type="Node3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001" unique_id=1740770650]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, -15, 1.77969)
 
-[node name="Black_Pawn_015_08" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_008" unique_id=1330598871]
+[node name="Black_Pawn_015_08" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Pawns_001/Black_Pawn_008" unique_id=1330598871]
 mesh = SubResource("ArrayMesh_uhxms")
 
-[node name="Black_Rooks_001" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces" unique_id=360760633]
+[node name="Black_Rooks_001" type="Node3D" parent="Sketchfab_model/Root/Black Pieces" unique_id=360760633]
 
-[node name="Black_Rook_003" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Rooks_001" unique_id=1199888130]
+[node name="Black_Rook_003" type="Node3D" parent="Sketchfab_model/Root/Black Pieces/Black_Rooks_001" unique_id=1199888130]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, -21, 2.72545)
 
-[node name="Black_Rook_003_0" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Rooks_001/Black_Rook_003" unique_id=1478347694]
+[node name="Black_Rook_003_0" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Rooks_001/Black_Rook_003" unique_id=1478347694]
 mesh = SubResource("ArrayMesh_vuu4w")
 
-[node name="Black_Rook_002" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Rooks_001" unique_id=895987095]
+[node name="Black_Rook_002" type="Node3D" parent="Sketchfab_model/Root/Black Pieces/Black_Rooks_001" unique_id=895987095]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, -21, 2.72545)
 
-[node name="Black_Rook_003_02" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Rooks_001/Black_Rook_002" unique_id=872670823]
+[node name="Black_Rook_003_02" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Rooks_001/Black_Rook_002" unique_id=872670823]
 mesh = SubResource("ArrayMesh_grp2h")
 
-[node name="Black_Knights_001" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces" unique_id=1970515727]
+[node name="Black_Knights_001" type="Node3D" parent="Sketchfab_model/Root/Black Pieces" unique_id=1970515727]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.2)
 
-[node name="Black_Knight_003" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Knights_001" unique_id=378961780]
+[node name="Black_Knight_003" type="Node3D" parent="Sketchfab_model/Root/Black Pieces/Black_Knights_001" unique_id=378961780]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -21, 3.72255)
 
-[node name="Black_Knight_003_0" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Knights_001/Black_Knight_003" unique_id=1650175896]
+[node name="Black_Knight_003_0" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Knights_001/Black_Knight_003" unique_id=1650175896]
 mesh = SubResource("ArrayMesh_eyxxa")
 
-[node name="Black_Knight_002" type="Node3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Knights_001" unique_id=1238215049]
+[node name="Black_Knight_002" type="Node3D" parent="Sketchfab_model/Root/Black Pieces/Black_Knights_001" unique_id=1238215049]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -21, 3.72255)
 
-[node name="Black_Knight_003_02" type="MeshInstance3D" parent="Sketchfab_Scene2/Sketchfab_model/Root/Black Pieces/Black_Knights_001/Black_Knight_002" unique_id=582742255]
+[node name="Black_Knight_003_02" type="MeshInstance3D" parent="Sketchfab_model/Root/Black Pieces/Black_Knights_001/Black_Knight_002" unique_id=582742255]
 mesh = SubResource("ArrayMesh_k35ht")
-
-[node name="Sketchfab_Scene" parent="." unique_id=408508828 instance=ExtResource("2_5nxjj")]
-transform = Transform3D(-0.05874525, -0.05503028, 0.66622204, -0.03641571, 0.66805995, 0.051971108, -0.66749823, -0.031603165, -0.061468292, -0.0065248013, 0.41607618, 0.77249646)

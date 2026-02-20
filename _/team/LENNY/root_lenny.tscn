@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://bcv455uqr4qwp"]
 
+[ext_resource type="PackedScene" uid="uid://d1wc21rka0iaw" path="res://_/scene/center_table_as_cube_for_debug.tscn" id="1_yhixe"]
+[ext_resource type="PackedScene" uid="uid://e5e06din5tuo" path="res://_/team/LENNY/3D/low_poly_chess_-_chess_board.glb" id="2_5nxjj"]
+
 [node name="RootLenny" type="Node3D" unique_id=2141219621]
+
+[node name="CenterTableAsCubeForDebug" parent="." unique_id=1107119880 instance=ExtResource("1_yhixe")]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1020464964 instance=ExtResource("2_5nxjj")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.4638561, 0)

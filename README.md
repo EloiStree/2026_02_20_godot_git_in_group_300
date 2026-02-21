@@ -4,7 +4,8 @@
 - https://git-scm.com
 - https://git-fork.com
 
-
+Download the game:  
+https://300-gaming-space.itch.io/stage-initiation-la-programmation  
 
 <img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/c87b869b-62d9-4175-8471-17628f203d5d" />
 <img width="1148" height="625" alt="image" src="https://github.com/user-attachments/assets/743e95b8-8b66-4dcb-9133-59153a6cf5e3" />
